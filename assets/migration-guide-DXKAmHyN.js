@@ -1,6 +1,9 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as r}from"./index-gG8jtkCA.js";import"./index-DI2gBUGJ.js";import{M as i}from"./DocsRenderer-CFRXHY34-BX-DiTcR.js";import"./index-DI7CEG0L.js";import"./preview-Ct52NfJZ.js";import"./iframe-DcJsKy_w.js";import"./react-18-DjTew52g.js";import"./index-CXQShRbs.js";function s(o){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...r(),...o.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"Migration/Migration Guide"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-gG8jtkCA.js";import"./index-BLaM-zqO.js";import{M as r}from"./DocsRenderer-CFRXHY34-7yy41LSN.js";import"./index-DI7CEG0L.js";import"./preview-Dl_UtUpE.js";import"./iframe-DzvCShjd.js";import"./react-18-DjTew52g.js";import"./index-CXQShRbs.js";function s(o){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",hr:"hr",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i(),...o.components};return n.jsxs(n.Fragment,{children:[n.jsx(r,{title:"Migration/Migration Guide"}),`
 `,n.jsx(e.h1,{id:"migration-guide",children:"Migration Guide"}),`
 `,n.jsxs(e.p,{children:["This guide walks you through the process of migrating your project from ",n.jsx(e.code,{children:"@momo-kits/core"})," to ",n.jsx(e.code,{children:"@momo-kits/foundation"}),"."]}),`
+`,n.jsx(e.hr,{}),`
+`,n.jsx(e.h2,{id:"minimum-requirements",children:"Minimum Requirements"}),`
+`,n.jsx(e.p,{children:"Deployment target: 81"}),`
 `,n.jsx(e.hr,{}),`
 `,n.jsx(e.h2,{id:"1-install-the-new-package",children:"1. Install the new package"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-sh",children:`yarn add @momo-kits/foundation
@@ -45,4 +48,4 @@ npm install @momo-kits/foundation
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["📦 ",n.jsx(e.a,{href:"/docs/migration-component-mapping--docs",children:"Component Mapping"})]}),`
 `,n.jsxs(e.li,{children:["⚠️ ",n.jsx(e.a,{href:"/docs/migration-breaking-changes--docs",children:"Breaking Changes"})]}),`
-`]})]})}function j(o={}){const{wrapper:e}={...r(),...o.components};return e?n.jsx(e,{...o,children:n.jsx(s,{...o})}):s(o)}export{j as default};
+`]})]})}function j(o={}){const{wrapper:e}={...i(),...o.components};return e?n.jsx(e,{...o,children:n.jsx(s,{...o})}):s(o)}export{j as default};

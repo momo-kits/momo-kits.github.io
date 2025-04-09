@@ -1,9 +1,9 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-gG8jtkCA.js";import"./index-DI2gBUGJ.js";import{M as a}from"./DocsRenderer-CFRXHY34-BX-DiTcR.js";import"./index-DI7CEG0L.js";import"./preview-Ct52NfJZ.js";import"./iframe-DcJsKy_w.js";import"./react-18-DjTew52g.js";import"./index-CXQShRbs.js";function t(o){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",...i(),...o.components};return n.jsxs(n.Fragment,{children:[n.jsx(a,{title:"Guides/Navigation"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-gG8jtkCA.js";import"./index-BLaM-zqO.js";import{M as a}from"./DocsRenderer-CFRXHY34-7yy41LSN.js";import"./index-DI7CEG0L.js";import"./preview-Dl_UtUpE.js";import"./iframe-DzvCShjd.js";import"./react-18-DjTew52g.js";import"./index-CXQShRbs.js";function t(o){const e={code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",...i(),...o.components};return n.jsxs(n.Fragment,{children:[n.jsx(a,{title:"Guides/Navigation"}),`
 `,n.jsx(e.h1,{id:"navigation-guide",children:"Navigation Guide"}),`
 `,n.jsx(e.h2,{id:"introduction",children:"Introduction"}),`
 `,n.jsx(e.p,{children:"The Navigation system in Momo Kits provides a flexible and powerful way to navigate between screens in your application. It is built on top of React Navigation and provides additional features tailored for Momo applications."}),`
 `,n.jsx(e.h2,{id:"navigation-container",children:"Navigation Container"}),`
-`,n.jsxs(e.p,{children:["The ",n.jsx(e.code,{children:"NavigationContainer"})," is the root component that manages navigation state and links navigation with the app environment."]}),`
+`,n.jsxs(e.p,{children:["The ",n.jsx(e.code,{children:"NavigationContainer"})," is the root component that manages navigation state and links navigation with the app environment and ",n.jsx("b",{children:"required"})," to wrap your application in index file."]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-tsx",children:`import {MaxApi} from '@momo-platform/api';
 import {
   defaultTheme,
@@ -35,6 +35,11 @@ navigator.push({
   },
 });
 
+// Present a new screen modally
+navigator.present({
+  screen: ScreenComponent,
+});
+
 // Replace the current screen
 navigator.replace({
   screen: NewScreenComponent,
@@ -58,7 +63,7 @@ navigator.showModal({
   barrierDismissible: true,
 });
 `})}),`
-`,n.jsx(e.h3,{id:"bottom-modal-navigation",children:"Bottom Modal Navigation"}),`
+`,n.jsx(e.h3,{id:"bottom-sheet-navigation",children:"Bottom Sheet Navigation"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-tsx",children:`import {ApplicationContext} from '@momo-kits/foundation';
 import {useContext} from 'react';
 
@@ -156,6 +161,7 @@ const BottomTabUsage: React.FC<NavigationScreenProps> = ({navigation}) => {
           badgeLabel: '3', // Show badge with count
         },
       ]}
+      nested = {true}
       initialRouteName="home"
       navigation={navigation}
       floatingButton={{
