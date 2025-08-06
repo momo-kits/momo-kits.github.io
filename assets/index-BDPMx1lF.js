@@ -1,1 +1,0 @@
-import{j as t}from"./jsx-runtime-D_zvdyIk.js";import{r as o}from"./index-DI7CEG0L.js";import{A as e,i}from"./styles-BFdRcqeG.js";import{V as s}from"./index-BzmpT3sc.js";const c=()=>{const{theme:r}=o.useContext(e);return t.jsx(s,{style:{height:1,width:"100%",backgroundColor:r.colors.border.default,marginVertical:i.XS}})};export{c as D};
