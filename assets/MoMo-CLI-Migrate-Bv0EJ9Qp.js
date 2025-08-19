@@ -1,4 +1,4 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as r}from"./index-gG8jtkCA.js";import"./index-ThpmIpoF.js";import{M as i}from"./DocsRenderer-CFRXHY34-D3OyS5-C.js";import"./index-DI7CEG0L.js";import"./preview-CMZB6k2I.js";import"./iframe-B8Zj-3Uz.js";import"./react-18-DjTew52g.js";import"./index-CXQShRbs.js";function o(s){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",hr:"hr",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...r(),...s.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"Migration/Migrate Mini App 5.0"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as o}from"./index-gG8jtkCA.js";import"./index-CYMhc7lc.js";import{M as i}from"./DocsRenderer-CFRXHY34-rQq2b6jU.js";import"./index-DI7CEG0L.js";import"./preview-UJbxTZDP.js";import"./iframe-B9bmqSNJ.js";import"./react-18-DjTew52g.js";import"./index-CXQShRbs.js";function r(s){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",h4:"h4",hr:"hr",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",ul:"ul",...o(),...s.components};return n.jsxs(n.Fragment,{children:[n.jsx(i,{title:"Migration/Migrate Mini App 5.0"}),`
 `,n.jsx(e.h1,{id:"migrate-mini-app-50",children:"Migrate Mini App 5.0"}),`
 `,n.jsx(e.p,{children:"This guide provides a step-by-step example of how to migrate your MiniApp React Native project to the new architecture running on the MoMo Platform using MoMo-CLI."}),`
 `,n.jsx(e.h2,{id:"-prerequisites",children:"✅ Prerequisites"}),`
@@ -19,30 +19,11 @@ import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as r}from"
 `,n.jsxs(e.ol,{children:[`
 `,n.jsxs(e.li,{children:[`
 `,n.jsx(e.p,{children:"Open your terminal and run the following command:"}),`
-`,n.jsxs(e.blockquote,{children:[`
-`,n.jsxs(e.p,{children:["💡 ",n.jsx(e.strong,{children:"Before proceeding"}),", ensure your global ",n.jsx(e.code,{children:".npmrc"})," file is correctly configured with the following content."]}),`
-`,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["If the file doesn’t exist, create it:",`
-`,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["On macOS/Linux: ",n.jsx(e.code,{children:"~/.npmrc"})]}),`
-`,n.jsxs(e.li,{children:["On Windows: ",n.jsx(e.code,{children:"%USERPROFILE%\\.npmrc"})]}),`
-`]}),`
-`]}),`
-`,n.jsx(e.li,{children:"Then, copy and paste the content below into the file:"}),`
-`]}),`
-`]}),`
-`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-bash",children:`@momo-platform:registry=http://nexus.mservice.com.vn:8081/repository/momo-app/
-email=phuc.ly@mservice.com.vn
-always-auth=true
-//nexus.mservice.com.vn:8081/repository/momo-app/:_auth="cHVzaGVyOnB1c2hlcg=="
-@momo-sof:registry=http://nexus.mservice.com.vn:8081/repository/momo-app
-@momo-miniapp:registry=https://gitlab.com/api/v4/projects/27153631/packages/npm/
-`})}),`
 `,n.jsx(e.h1,{id:""}),`
-`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-bash",children:`yarn global add @momo-platform/momo-migration@latest @momo-platform/momo-cli@latest 
+`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-bash",children:`yarn global add @momo-platform/momo-migration@latest @momo-platform/momo-cli@latest
 `})}),`
 `,n.jsx(e.h4,{id:"or",children:"or"}),`
-`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-bash",children:`npm add -g @momo-platform/momo-migration@latest @momo-platform/momo-cli@latest 
+`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-bash",children:`npm add -g @momo-platform/momo-migration@latest @momo-platform/momo-cli@latest
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
@@ -189,7 +170,7 @@ heavySumWorklet(numbers).then(result => {
 `,n.jsx(e.h4,{id:"-2-babel-syntax-error-typescript-interface-in-js-file",children:"🚫 2. Babel Syntax Error: TypeScript interface in JS file"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.strong,{children:"Error Example:"}),`
-`,n.jsx(e.pre,{children:n.jsx(e.code,{children:`✖ [03:07:34.698Z][LoggerPlugin] Failed to build bundle due to errors 
+`,n.jsx(e.pre,{children:n.jsx(e.code,{children:`✖ [03:07:34.698Z][LoggerPlugin] Failed to build bundle due to errors
 ✖ [03:07:34.698Z][LoggerPlugin] Error in "./node_modules/@officialaccount/components/components/BadgeTage.js":
   × Module build failed:
   ├─▶   ×
@@ -205,10 +186,10 @@ heavySumWorklet(numbers).then(result => {
   │     │  49 │   textColor: string;
   │     │     ╰────
   │     │
-  │   
+  │
   ╰─▶ Syntax Error
 
-✖ [03:07:34.739Z][LoggerPlugin] Failed to build bundle due to errors 
+✖ [03:07:34.739Z][LoggerPlugin] Failed to build bundle due to errors
 ✖ [03:07:34.739Z][LoggerPlugin] Error in "./node_modules/@officialaccount/components/components/BadgeTage.js":
   × Module build failed:
   ├─▶   ×
@@ -224,7 +205,7 @@ heavySumWorklet(numbers).then(result => {
   │     │  49 │   textColor: string;
   │     │     ╰────
   │     │
-  │   
+  │
   ╰─▶ Syntax Error
 `})}),`
 `]}),`
@@ -351,4 +332,4 @@ module.exports = function (api) {
 `]}),`
 `,n.jsx(e.hr,{}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"Next Step:"})," Follow the ",n.jsx(e.a,{href:"/docs/migration-migration-guide--docs",children:"Migration Guide"})," to get started."]}),`
-`,n.jsxs(e.p,{children:["If you have any questions or encounter any issues, please contact: ",n.jsx(e.a,{href:"mailto:le.nguyen4@mservice.com.vn",children:"le.nguyen4@mservice.com.vn"})]})]})}function u(s={}){const{wrapper:e}={...r(),...s.components};return e?n.jsx(e,{...s,children:n.jsx(o,{...s})}):o(s)}export{u as default};
+`,n.jsxs(e.p,{children:["If you have any questions or encounter any issues, please contact: ",n.jsx(e.a,{href:"mailto:le.nguyen4@mservice.com.vn",children:"le.nguyen4@mservice.com.vn"})]})]})}function u(s={}){const{wrapper:e}={...o(),...s.components};return e?n.jsx(e,{...s,children:n.jsx(r,{...s})}):r(s)}export{u as default};
