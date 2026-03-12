@@ -1,0 +1,3 @@
+import{j as t}from"./jsx-runtime-D_zvdyIk.js";import"./index-BmJxoLT2.js";import"./index-DI7CEG0L.js";import{D as i}from"./index-D0He8eRi.js";import{V as m}from"./index-aTsR8gS4.js";import"./Animated-CU-m9YKj.js";const f={title:"Foundation/Divider",component:i,parameters:{layout:"centered"},tags:["autodocs"],decorators:[a=>t.jsx(m,{style:{minWidth:375,height:100},children:t.jsx(a,{})})]},r={args:{}};var e,o,s;r.parameters={...r.parameters,docs:{...(e=r.parameters)==null?void 0:e.docs,source:{originalSource:`{
+  args: {}
+}`,...(s=(o=r.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};const x=["Default"];export{r as Default,x as __namedExportsOrder,f as default};
